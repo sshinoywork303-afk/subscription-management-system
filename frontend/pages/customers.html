@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Customers</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header>
+        <h1>Customer Management</h1>
+        <p>View and manage your registered customers.</p>
+      </header>
+
+      <!-- Customer Overview -->
+      <section class="customer-stats">
+        <div class="stat-card">
+          <h3>Total Customers</h3>
+          <p>250</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Active Customers</h3>
+          <p>210</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Inactive Customers</h3>
+          <p>40</p>
+        </div>
+      </section>
+
+      <!-- Add Customer Form -->
+      <section class="customer-form">
+        <h2>Add New Customer</h2>
+
+        <form id="customerForm">
+          <label for="customerName">Full Name</label>
+          <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            placeholder="Enter customer name"
+            required
+          />
+
+          <label for="customerEmail">Email Address</label>
+          <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="Enter email address"
+            required
+          />
+
+          <label for="customerPhone">Phone Number</label>
+          <input
+            type="tel"
+            id="customerPhone"
+            name="customerPhone"
+            placeholder="Enter phone number"
+          />
+
+          <label for="companyName">Company Name</label>
+          <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            placeholder="Enter company name"
+          />
+
+          <label for="customerAddress">Address</label>
+          <textarea
+            id="customerAddress"
+            name="customerAddress"
+            placeholder="Enter customer address"
+          ></textarea>
+
+          <label for="customerStatus">Customer Status</label>
+          <select id="customerStatus" name="customerStatus">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+          </select>
+
+          <button type="submit">Add Customer</button>
+        </form>
+      </section>
+
+      <!-- Customer List -->
+      <section class="customer-list">
+        <h2>Registered Customers</h2>
+
+        <input
+          type="search"
+          id="searchCustomer"
+          placeholder="Search customers..."
+        />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Customer ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Company</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>CUS001</td>
+              <td>John Smith</td>
+              <td>john@example.com</td>
+              <td>9876543210</td>
+              <td>Tech Solutions</td>
+              <td>Active</td>
+              <td>
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>CUS002</td>
+              <td>Sarah Johnson</td>
+              <td>sarah@example.com</td>
+              <td>9876543211</td>
+              <td>Digital Works</td>
+              <td>Active</td>
+              <td>
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>CUS003</td>
+              <td>David Brown</td>
+              <td>david@example.com</td>
+              <td>9876543212</td>
+              <td>Creative Studio</td>
+              <td>Inactive</td>
+              <td>
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

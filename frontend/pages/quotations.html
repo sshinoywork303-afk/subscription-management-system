@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Quotations</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header>
+        <h1>Quotation Management</h1>
+        <p>Create and manage customer quotations.</p>
+      </header>
+
+      <!-- Quotation Overview -->
+      <section class="quotation-stats">
+        <div class="stat-card">
+          <h3>Total Quotations</h3>
+          <p>120</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Pending Quotations</h3>
+          <p>35</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Confirmed Quotations</h3>
+          <p>75</p>
+        </div>
+      </section>
+
+      <!-- Create Quotation -->
+      <section class="quotation-form">
+        <h2>Create New Quotation</h2>
+
+        <form id="quotationForm">
+          <label for="template">Quotation Template</label>
+
+          <select id="template" name="template" required>
+            <option value="">Select a template</option>
+            <option value="basic">Basic Template</option>
+            <option value="premium">Premium Template</option>
+          </select>
+
+          <label for="customer">Select Customer</label>
+
+          <select id="customer" name="customer" required>
+            <option value="">Choose a customer</option>
+            <option value="CUS001">John Smith</option>
+            <option value="CUS002">Sarah Johnson</option>
+            <option value="CUS003">David Brown</option>
+          </select>
+
+          <label for="plan">Select Plan</label>
+
+          <select id="plan" name="plan" required>
+            <option value="">Choose a plan</option>
+            <option value="PL001">Basic Monthly</option>
+            <option value="PL002">Premium Yearly</option>
+          </select>
+
+          <label for="product">Select Product</label>
+
+          <select id="product" name="product" required>
+            <option value="">Choose a product</option>
+            <option value="PR001">Business Software</option>
+            <option value="PR002">Cloud Storage</option>
+          </select>
+
+          <label for="quantity">Quantity</label>
+
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+            required
+          />
+
+          <label for="unitPrice">Unit Price (₹)</label>
+
+          <input
+            type="number"
+            id="unitPrice"
+            name="unitPrice"
+            min="0"
+            step="0.01"
+            placeholder="Enter unit price"
+            required
+          />
+
+          <label for="tax">Tax (%)</label>
+
+          <input
+            type="number"
+            id="tax"
+            name="tax"
+            min="0"
+            step="0.01"
+            placeholder="Enter tax percentage"
+          />
+
+          <label for="validity">Quotation Validity (Days)</label>
+
+          <input
+            type="number"
+            id="validity"
+            name="validity"
+            min="1"
+            placeholder="Example: 30"
+            required
+          />
+
+          <label for="notes">Additional Notes</label>
+
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="Enter additional notes"
+          ></textarea>
+
+          <button type="submit">Create Quotation</button>
+        </form>
+      </section>
+
+      <!-- Quotation List -->
+      <section class="quotation-list">
+        <h2>Existing Quotations</h2>
+
+        <input
+          type="search"
+          id="searchQuotation"
+          placeholder="Search quotations..."
+        />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Quotation ID</th>
+              <th>Customer</th>
+              <th>Plan</th>
+              <th>Amount</th>
+              <th>Created Date</th>
+              <th>Valid Until</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>QUO001</td>
+              <td>John Smith</td>
+              <td>Basic Monthly</td>
+              <td>₹999</td>
+              <td>31-10-2026</td>
+              <td>30-11-2026</td>
+              <td>Draft</td>
+              <td>
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>QUO002</td>
+              <td>Sarah Johnson</td>
+              <td>Premium Yearly</td>
+              <td>₹9999</td>
+              <td>30-10-2026</td>
+              <td>29-11-2026</td>
+              <td>Quotation</td>
+              <td>
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
