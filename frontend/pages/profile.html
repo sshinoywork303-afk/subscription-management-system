@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Profile</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header class="page-header">
+        <h1>My Profile</h1>
+        <p>Manage your account information and password.</p>
+      </header>
+
+      <!-- Profile Information -->
+      <section class="profile-section">
+        <h2>Personal Information</h2>
+
+        <form id="profileForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          </div>
+
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+
+      <!-- Change Password -->
+      <section class="password-section">
+        <h2>Change Password</h2>
+
+        <form id="passwordForm">
+          <div class="form-group">
+            <label for="currentPassword">Current Password</label>
+            <input
+              type="password"
+              id="currentPassword"
+              name="currentPassword"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="newPassword">New Password</label>
+            <input
+              type="password"
+              id="newPassword"
+              name="newPassword"
+              minlength="9"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm New Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              minlength="9"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+
+          <button type="submit">Update Password</button>
+        </form>
+      </section>
+
+      <!-- Account Details -->
+      <section class="account-details">
+        <h2>Account Details</h2>
+
+        <dl>
+          <div>
+            <dt>Role</dt>
+            <dd id="accountRole">Staff</dd>
+          </div>
+
+          <div>
+            <dt>Account Status</dt>
+            <dd id="accountStatus">Active</dd>
+          </div>
+
+          <div>
+            <dt>Member Since</dt>
+            <dd id="memberSince">—</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+  </body>
+</html>
