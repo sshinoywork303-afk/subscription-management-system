@@ -2,7 +2,7 @@
 const CONFIG = {
     APP_NAME: "SubSync",
     VERSION: "1.0.0",
-    API_BASE_URL: "http://localhost:5000/api"
+    API_BASE_URL: "http://localhost:3000/api/db-test"
 };
 
 const App = {
