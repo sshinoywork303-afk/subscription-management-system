@@ -1,0 +1,71 @@
+/* =========================
+   AUTHENTICATION PAGE
+   ========================= */
+
+/* Page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Register form */
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Labels */
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button */
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Login message */
+
+p {
+    text-align: center;
+}
+
+/* Login link */
+
+a {
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,148 @@
+/* =========================
+   INVOICES PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page header */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Generate invoices button */
+
+#generateInvoicesBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Summary cards */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Invoice filters */
+
+.invoice-filters {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.invoice-filters h2 {
+    margin-bottom: 15px;
+}
+
+#invoiceFilterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Filter buttons */
+
+#invoiceFilterForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Invoice list */
+
+.invoice-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Table container */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Invoice table */
+
+.invoice-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.invoice-list th,
+.invoice-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.invoice-list th {
+    font-weight: bold;
+}
+
+/* Invoice details */
+
+.invoice-details {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.invoice-details h2 {
+    margin-bottom: 10px;
+}

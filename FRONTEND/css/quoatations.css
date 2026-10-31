@@ -1,0 +1,134 @@
+/* =========================
+   QUOTATIONS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page heading */
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Quotation statistics */
+
+.quotation-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Quotation form */
+
+.quotation-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.quotation-form h2 {
+    margin-bottom: 15px;
+}
+
+.quotation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quotation-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.quotation-form input,
+.quotation-form select,
+.quotation-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.quotation-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.quotation-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Quotation list */
+
+.quotation-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Search */
+
+#searchQuotation {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Quotation table */
+
+.quotation-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quotation-list th,
+.quotation-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.quotation-list th {
+    font-weight: bold;
+}
+
+/* Action buttons */
+
+.quotation-list button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

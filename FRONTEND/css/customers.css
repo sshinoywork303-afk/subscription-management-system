@@ -1,0 +1,138 @@
+/* =========================
+   CUSTOMERS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page header */
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Customer statistics */
+
+.customer-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Customer form */
+
+.customer-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.customer-form h2 {
+    margin-bottom: 15px;
+}
+
+#customerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.customer-form input,
+.customer-form textarea,
+.customer-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.customer-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.customer-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Customer list */
+
+.customer-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.customer-list h2 {
+    margin-bottom: 15px;
+}
+
+/* Search */
+
+#searchCustomer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Customer table */
+
+.customer-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-list th,
+.customer-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.customer-list th {
+    font-weight: bold;
+}
+
+/* Table buttons */
+
+.customer-list button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

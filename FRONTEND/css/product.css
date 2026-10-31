@@ -1,0 +1,112 @@
+/* =========================
+   PRODUCTS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page heading */
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Product form */
+
+.product-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form heading */
+
+.product-form h2 {
+    margin-bottom: 15px;
+}
+
+/* Form */
+
+.product-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+
+.product-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs and textarea */
+
+.product-form input,
+.product-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea */
+
+.product-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Form button */
+
+.product-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Product list */
+
+.product-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Product table */
+
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table cells */
+
+.product-list th,
+.product-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Table heading */
+
+.product-list th {
+    font-weight: bold;
+}
+
+/* Action buttons */
+
+.product-list button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

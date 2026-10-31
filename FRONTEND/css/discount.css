@@ -1,0 +1,173 @@
+/* =========================
+   DISCOUNTS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page header */
+
+.page-header {
+    margin-bottom: 20px;
+}
+
+/* Summary cards */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Create discount */
+
+.create-discount {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.create-discount h2 {
+    margin-bottom: 15px;
+}
+
+#discountForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Applies To */
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+fieldset input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Create discount button */
+
+#discountForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Discount filters */
+
+.discount-filters {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.discount-filters h2 {
+    margin-bottom: 15px;
+}
+
+#discountFilterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: end;
+}
+
+#discountFilterForm .form-group {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 0;
+}
+
+#discountFilterForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Discount list */
+
+.discount-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.discount-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.discount-list th,
+.discount-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.discount-list th {
+    font-weight: bold;
+}

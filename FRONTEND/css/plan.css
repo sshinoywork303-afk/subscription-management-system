@@ -1,0 +1,111 @@
+/* =========================
+   PLANS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page heading */
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Plan form */
+
+.plan-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form heading */
+
+.plan-form h2 {
+    margin-bottom: 15px;
+}
+
+/* Form */
+
+.plan-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+
+.plan-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs and select */
+
+.plan-form input,
+.plan-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkbox settings */
+
+.plan-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Create plan button */
+
+.plan-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Plan list */
+
+.plan-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Plan table */
+
+.plan-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table cells */
+
+.plan-list th,
+.plan-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Table heading */
+
+.plan-list th {
+    font-weight: bold;
+}
+
+/* Action buttons */
+
+.plan-list button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

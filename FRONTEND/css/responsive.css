@@ -1,0 +1,73 @@
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets and smaller screens */
+
+@media (max-width: 768px) {
+
+    .products-list,
+    .plans-list {
+        flex-direction: column;
+    }
+
+    .product-card,
+    .plan-card {
+        width: 100%;
+    }
+
+    .auth-container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .products-container,
+    .plans-container,
+    .subscriptions-container,
+    .quotations-container,
+    .invoices-container,
+    .payments-container,
+    .discounts-container,
+    .customers-container {
+        padding: 15px;
+    }
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 480px) {
+
+    .product-card,
+    .plan-card,
+    .subscription-card,
+    .quotation-card,
+    .invoice-card,
+    .payment-card,
+    .discount-card,
+    .customer-card {
+        padding: 15px;
+    }
+
+    .products-container h1,
+    .plans-container h1,
+    .subscriptions-container h1,
+    .quotations-container h1,
+    .invoices-container h1,
+    .payments-container h1,
+    .discounts-container h1,
+    .customers-container h1 {
+        font-size: 24px;
+    }
+
+    .product-card button,
+    .plan-card button,
+    .subscription-card button,
+    .quotation-card button,
+    .invoice-card button,
+    .payment-card button,
+    .discount-card button,
+    .customer-card button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,134 @@
+/* =========================
+   SUBSCRIPTIONS PAGE
+   ========================= */
+
+/* Main content */
+
+.main-content {
+    padding: 20px;
+}
+
+/* Page heading */
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Subscription statistics */
+
+.subscription-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Subscription form */
+
+.subscription-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.subscription-form h2 {
+    margin-bottom: 15px;
+}
+
+.subscription-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subscription-form input,
+.subscription-form select,
+.subscription-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.subscription-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.subscription-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Subscription list */
+
+.subscription-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Search */
+
+#searchSubscription {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Subscription table */
+
+.subscription-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subscription-list th,
+.subscription-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.subscription-list th {
+    font-weight: bold;
+}
+
+/* Action buttons */
+
+.subscription-list button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
