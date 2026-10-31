@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Invoices</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <h1>Invoices</h1>
+          <p>Manage subscription invoices and payment status.</p>
+        </div>
+
+        <button type="button" id="generateInvoicesBtn">
+          Generate Due Invoices
+        </button>
+      </header>
+
+      <!-- Invoice Summary -->
+      <section class="summary-cards">
+        <article class="summary-card">
+          <h3>Total Invoices</h3>
+          <p id="totalInvoices">0</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Draft</h3>
+          <p id="draftInvoices">0</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Unpaid</h3>
+          <p id="unpaidInvoices">0</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Overdue</h3>
+          <p id="overdueInvoices">0</p>
+        </article>
+      </section>
+
+      <!-- Filters -->
+      <section class="invoice-filters">
+        <h2>Find Invoices</h2>
+
+        <form id="invoiceFilterForm">
+          <div class="form-group">
+            <label for="searchInvoice">Search</label>
+            <input
+              type="search"
+              id="searchInvoice"
+              name="search"
+              placeholder="Invoice number or customer"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="invoiceStatus">Status</label>
+            <select id="invoiceStatus" name="status">
+              <option value="">All statuses</option>
+              <option value="draft">Draft</option>
+              <option value="confirmed">Confirmed</option>
+              <option value="paid">Paid</option>
+              <option value="overdue">Overdue</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="invoiceDate">Invoice date</label>
+            <input type="date" id="invoiceDate" name="date" />
+          </div>
+
+          <button type="submit">Apply Filters</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+
+      <!-- Invoice Table -->
+      <section class="invoice-list">
+        <h2>Invoice Records</h2>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Invoice No.</th>
+                <th>Customer</th>
+                <th>Subscription</th>
+                <th>Invoice Date</th>
+                <th>Due Date</th>
+                <th>Total</th>
+                <th>Amount Paid</th>
+                <th>Balance</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="invoiceTableBody">
+              <!-- JavaScript will insert invoice rows here -->
+              <tr>
+                <td colspan="10">No invoices to display.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Invoice Details -->
+      <section class="invoice-details" id="invoiceDetails">
+        <h2>Invoice Details</h2>
+        <p>Select an invoice to view its details.</p>
+
+        <!-- JavaScript can populate customer, product, tax,
+                 line-item, and total information here. -->
+      </section>
+    </main>
+  </body>
+</html>

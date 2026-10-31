@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Discounts</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <h1>Discounts</h1>
+          <p>Create and manage discounts for products and subscriptions.</p>
+        </div>
+      </header>
+
+      <!-- Discount Summary -->
+      <section class="summary-cards">
+        <article class="summary-card">
+          <h3>Total Discounts</h3>
+          <p id="totalDiscounts">0</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Active Discounts</h3>
+          <p id="activeDiscounts">0</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Expired Discounts</h3>
+          <p id="expiredDiscounts">0</p>
+        </article>
+      </section>
+
+      <!-- Create Discount Form -->
+      <section class="create-discount">
+        <h2>Create a Discount</h2>
+
+        <form id="discountForm">
+          <div class="form-group">
+            <label for="discountName">Discount Name</label>
+            <input type="text" id="discountName" name="discountName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="discountType">Discount Type</label>
+            <select id="discountType" name="discountType" required>
+              <option value="">Select type</option>
+              <option value="percentage">Percentage</option>
+              <option value="fixed">Fixed Amount</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="discountValue">Discount Value</label>
+            <input
+              type="number"
+              id="discountValue"
+              name="discountValue"
+              min="0.01"
+              step="0.01"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="minimumPurchase">Minimum Purchase Amount (₹)</label>
+            <input
+              type="number"
+              id="minimumPurchase"
+              name="minimumPurchase"
+              min="0"
+              step="0.01"
+              value="0"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="minimumQuantity">Minimum Quantity</label>
+            <input
+              type="number"
+              id="minimumQuantity"
+              name="minimumQuantity"
+              min="1"
+              value="1"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="discountStartDate">Start Date</label>
+            <input
+              type="date"
+              id="discountStartDate"
+              name="startDate"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="discountEndDate">End Date</label>
+            <input type="date" id="discountEndDate" name="endDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="usageLimit">Usage Limit</label>
+            <input
+              type="number"
+              id="usageLimit"
+              name="usageLimit"
+              min="1"
+              placeholder="Optional"
+            />
+          </div>
+
+          <fieldset>
+            <legend>Applies To</legend>
+
+            <label>
+              <input type="checkbox" name="appliesTo" value="products" />
+              Products
+            </label>
+
+            <label>
+              <input type="checkbox" name="appliesTo" value="subscriptions" />
+              Subscriptions
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="discountProduct">Specific Product (Optional)</label>
+            <select id="discountProduct" name="productId">
+              <option value="">All eligible products</option>
+            </select>
+          </div>
+
+          <button type="submit">Create Discount</button>
+        </form>
+      </section>
+
+      <!-- Discount Filters -->
+      <section class="discount-filters">
+        <h2>Find Discounts</h2>
+
+        <form id="discountFilterForm">
+          <div class="form-group">
+            <label for="discountSearch">Search</label>
+            <input
+              type="search"
+              id="discountSearch"
+              name="search"
+              placeholder="Discount name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="discountStatus">Status</label>
+            <select id="discountStatus" name="status">
+              <option value="">All statuses</option>
+              <option value="active">Active</option>
+              <option value="scheduled">Scheduled</option>
+              <option value="expired">Expired</option>
+              <option value="exhausted">Usage Limit Reached</option>
+            </select>
+          </div>
+
+          <button type="submit">Apply Filters</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+
+      <!-- Discount Table -->
+      <section class="discount-list">
+        <h2>Discount Records</h2>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Discount Name</th>
+                <th>Type</th>
+                <th>Value</th>
+                <th>Minimum Purchase</th>
+                <th>Minimum Quantity</th>
+                <th>Valid From</th>
+                <th>Valid Until</th>
+                <th>Usage</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="discountTableBody">
+              <!-- JavaScript will insert discount rows here -->
+              <tr>
+                <td colspan="10">No discounts to display.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
