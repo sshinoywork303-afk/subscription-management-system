@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Management - Plans</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <a href="dashboard.html">Dashboard</a><br />
+      <a href="customers.html">Customers</a><br />
+      <a href="products.html">Products</a><br />
+      <a href="plans.html">Plans</a><br />
+      <a href="quotations.html">Quotations</a><br />
+      <a href="subscriptions.html">Subscriptions</a><br />
+      <a href="invoices.html">Invoices</a><br />
+      <a href="payments.html">Payments</a><br />
+      <a href="discounts.html">Discounts</a><br />
+    </div>
+    <main class="main-content">
+      <header>
+        <h1>Subscription Plans</h1>
+        <p>Create and manage your subscription plans.</p>
+      </header>
+
+      <!-- Create Plan Form -->
+      <section class="plan-form">
+        <h2>Create New Plan</h2>
+
+        <form id="planForm">
+          <label for="planName">Plan Name</label>
+          <input
+            type="text"
+            id="planName"
+            name="planName"
+            placeholder="Enter plan name"
+            required
+          />
+
+          <label for="product">Select Product</label>
+          <select id="product" name="product" required>
+            <option value="">Choose a product</option>
+            <option value="PR001">Business Software</option>
+            <option value="PR002">Cloud Storage</option>
+          </select>
+
+          <label for="price">Plan Price (₹)</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="Enter plan price"
+            min="0"
+            step="0.01"
+            required
+          />
+
+          <label for="billing">Billing Frequency</label>
+          <select id="billing" name="billing" required>
+            <option value="">Select frequency</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+
+          <label for="quantity">Minimum Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+            required
+          />
+
+          <label for="startDate">Available From</label>
+          <input type="date" id="startDate" name="startDate" required />
+
+          <label for="endDate">Available Until</label>
+          <input type="date" id="endDate" name="endDate" required />
+
+          <h3>Plan Settings</h3>
+
+          <label>
+            <input type="checkbox" name="autoClose" />
+            Automatically close plan after expiry
+          </label>
+
+          <label>
+            <input type="checkbox" name="renewal" />
+            Allow subscription renewal
+          </label>
+
+          <label>
+            <input type="checkbox" name="pause" />
+            Allow subscriptions to be paused
+          </label>
+
+          <label>
+            <input type="checkbox" name="earlyClose" />
+            Allow early closure
+          </label>
+
+          <button type="submit">Create Plan</button>
+        </form>
+      </section>
+
+      <!-- Existing Plans -->
+      <section class="plan-list">
+        <h2>Existing Plans</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Plan ID</th>
+              <th>Plan Name</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Billing</th>
+              <th>Minimum Quantity</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>PL001</td>
+              <td>Basic Monthly</td>
+              <td>Business Software</td>
+              <td>₹999</td>
+              <td>Monthly</td>
+              <td>1</td>
+              <td>Active</td>
+              <td>
+                <button type="button">Edit</button>
+                <button type="button">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>PL002</td>
+              <td>Premium Yearly</td>
+              <td>Cloud Storage</td>
+              <td>₹9999</td>
+              <td>Yearly</td>
+              <td>5</td>
+              <td>Active</td>
+              <td>
+                <button type="button">Edit</button>
+                <button type="button">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
